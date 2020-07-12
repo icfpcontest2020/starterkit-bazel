@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec bazel-bin/app/app "$@"
+bazel-bin/app/app "$@" || echo "run error code: $?"
